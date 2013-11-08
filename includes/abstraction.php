@@ -50,6 +50,11 @@ function bp_notifications_toolbar_menu() {
 function bp_notifications_buddybar_menu() {}
 
 // @todo flesh these out with actual functionality
+function bp_notifications_mark_notifications_by_type( $user_id, $component_name, $component_action, $is_new ) {}
+function bp_notifications_mark_notifications_by_item_id( $user_id, $item_id, $component_name, $component_action, $secondary_item_id, $is_new ) {}
+function bp_notifications_mark_all_notifications_by_type( $item_id, $component_name, $component_action, $secondary_item_id, $is_new ) {}
+function bp_notifications_mark_notifications_from_user( $user_id, $component_name, $component_action, $is_new ) {}
+
 function bp_notifications_delete_notifications_by_type( $user_id, $component_name, $component_action ) {}
 function bp_notifications_delete_notifications_from_user( $user_id, $component_name, $component_action ) {}
 function bp_notifications_delete_notifications_by_item_id( $user_id, $item_id, $component_name, $component_action, $secondary_item_id ) {}
